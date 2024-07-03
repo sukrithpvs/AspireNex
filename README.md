@@ -48,6 +48,100 @@ The combined model is trained end-to-end using the PyTorch framework.
 
 This project is inspired by the image captioning tutorial from the PyTorch documentation and the Hugging Face Transformers library.
 
+Sure, here's a `README.md` file that explains how to set up and run the provided face recognition system using the ArcFace model.
+
+---
+
+# Face Recognition System using ArcFace
+
+This repository contains code for a face recognition system using an ArcFace model with additional features such as facial expression recognition, gender detection, and accuracy measurement.
+
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+- Python 3.6 or higher
+- PyTorch
+- OpenCV
+- NumPy
+
+You can install the required packages using pip:
+
+```bash
+pip install torch torchvision opencv-python numpy
+```
+
+
+### 1. Download the Pre-trained Model
+
+Download the ArcFace model weights (`backbone_r100.pth`) and place it in the desired directory. You can find the pre-trained model weights [here](https://github.com/deepinsight/insightface).
+
+### 2. Clone the Repository
+
+Clone this repository to your local machine:
+
+```bash
+git clone https://github.com/your-username/arcface-face-recognition.git
+cd arcface-face-recognition
+```
+
+### 3. Place the Haarcascade XML File
+
+Download the `haarcascade_frontalface_default.xml` file from the OpenCV GitHub repository and place it in the desired directory. You can find it [here](https://github.com/opencv/opencv/tree/master/data/haarcascades).
+
+
+## Code Explanation
+
+### Model Definition
+
+The `YourArcFaceModel` class defines a simple neural network for face recognition based on ArcFace. The model is initialized with a convolutional layer, pooling layer, and a fully connected layer.
+
+### Loading Pre-trained Weights
+
+The pre-trained weights are loaded into the model using `torch.load` and `model.load_state_dict`.
+
+### Face Detection
+
+Faces are detected in the video stream using OpenCV's `CascadeClassifier`.
+
+### Extracting Face Embeddings
+
+The function `extract_face_embedding` preprocesses the face image and extracts embeddings using the ArcFace model.
+
+### Calculating Accuracy
+
+The function `calculate_accuracy` calculates the accuracy based on the predicted labels and true labels. This is a placeholder and should be replaced with the actual logic for calculating accuracy.
+
+### Live Video Processing
+
+The `process_live_video` function captures live video from the webcam, detects faces, extracts embeddings, and displays the bounding box and accuracy on the video feed.
+
+## Usage
+
+1. Ensure your webcam is connected and working.
+2. Run the `face_recognition.py` script.
+3. The system will display the live video feed with detected faces and calculated accuracy.
+4. Press 'q' to quit the video feed.
+
+## Troubleshooting
+
+- If the video feed does not open, ensure your webcam is properly connected and accessible.
+- If faces are not detected, make sure the `haarcascade_frontalface_default.xml` file is in the correct path.
+
+
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+## Acknowledgements
+
+- [InsightFace](https://github.com/deepinsight/insightface) for the ArcFace model
+- [OpenCV](https://opencv.org/) for the face detection
+
+---
+
+
+
 # Tic-Tac-Toe AI Game
 
 ## Overview
