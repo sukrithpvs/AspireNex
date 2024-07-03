@@ -14,19 +14,6 @@ This project demonstrates how to train an image captioning model using PyTorch. 
 - Pillow
 - Gradio (optional)
 
-## Dataset
-
-The code assumes you have the Flickr8k dataset, which consists of images and their corresponding captions. The dataset should be structured as follows:
-
-```
-- Images/
-  - 1000268201_693b08cb0e.jpg
-  - 1001773457_577c3a7d70.jpg
-  - ...
-- captions.txt
-```
-
-The `captions.txt` file should contain the captions for each image, with each line in the format `image_id,caption`.
 
 ## Usage
 
