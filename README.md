@@ -1,4 +1,3 @@
-# AspireNex
 
 #Image Captioning with PyTorch
 
