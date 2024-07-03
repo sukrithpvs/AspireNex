@@ -1,5 +1,5 @@
-
-#Image Captioning with PyTorch
+# AspireNex
+# Image Captioning with PyTorch
 
 This project demonstrates how to train an image captioning model using PyTorch. The model combines a pre-trained ResNet for image encoding and a pre-trained GPT-2 language model for caption generation.
 
