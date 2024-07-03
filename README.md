@@ -103,11 +103,4 @@ This is a simple Tic-Tac-Toe game created using Python and Tkinter. You can play
 - **Choice Frame:** Lets you choose 'X' or 'O' and who goes first.
 - **Game Frame:** Displays the Tic-Tac-Toe board and controls.
 
-## License
 
-This project is open-source and can be freely modified or distributed.
-
-Enjoy playing Tic-Tac-Toe!
-
-Citations:
-[1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/7324171/b0c88bda-b4eb-4d06-bbe1-2bdfedc98d46/paste.txt
